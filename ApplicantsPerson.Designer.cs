@@ -202,6 +202,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(160, 20);
             this.textBox5.TabIndex = 14;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // numericUpDown1
             // 
