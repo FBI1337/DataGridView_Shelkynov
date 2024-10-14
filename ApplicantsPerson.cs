@@ -79,7 +79,7 @@ namespace DataGridView_Shelkynov
             if (e.Index > -1)
             {
                 var value = (Gender)(sender as ComboBox).Items[e.Index];
-                e.Graphics.DrawString(GetDisplayValue(value),
+                e.Graphics.DrawString(GetDisplayValueGender(value),
                     e.Font,
                     new SolidBrush(e.ForeColor),
                     e.Bounds.X + 20,
@@ -87,7 +87,29 @@ namespace DataGridView_Shelkynov
             }
         }
 
-        private string GetDisplayValue(Gender value)
+        private void comboBox2_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            e.DrawBackground();
+            e.Graphics.FillEllipse(Brushes.Blue, new Rectangle(e.Bounds.X + 2, e.Bounds.Y + 2, e.Bounds.Height - 4, e.Bounds.Height - 4));
+            if (e.Index > -1)
+            {
+                var value = (Enducation)(sender as ComboBox).Items[e.Index];
+                e.Graphics.DrawString(GetDisplayValueEnducation(value),
+                    e.Font,
+                    new SolidBrush(e.ForeColor),
+                    e.Bounds.X + 20,
+                    e.Bounds.Y);
+            }
+        }
+
+        private string GetDisplayValueGender(Gender value)
+        {
+            var field = value.GetType().GetField(value.ToString());
+            var attributes = field.GetCustomAttributes<DescriptionAttribute>(false);
+            return attributes.FirstOrDefault()?.Description ?? "IDK";
+        }
+
+        private string GetDisplayValueEnducation(Enducation value)
         {
             var field = value.GetType().GetField(value.ToString());
             var attributes = field.GetCustomAttributes<DescriptionAttribute>(false);

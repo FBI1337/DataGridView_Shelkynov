@@ -28,7 +28,6 @@ namespace DataGridView_Shelkynov.Models
         [Range(0, 100)]
         public decimal Value3 { get; set; }
 
-        [Range(0, 300)]
         public decimal Result { get; set; }
     }
 }
