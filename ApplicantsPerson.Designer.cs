@@ -52,7 +52,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label10 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -225,6 +225,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(160, 20);
             this.numericUpDown1.TabIndex = 15;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // numericUpDown2
             // 
@@ -232,6 +233,7 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(160, 20);
             this.numericUpDown2.TabIndex = 16;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // numericUpDown3
             // 
@@ -239,6 +241,7 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(160, 20);
             this.numericUpDown3.TabIndex = 17;
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // dateTimePicker1
             // 
@@ -273,16 +276,12 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // label10
+            // textBox2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(217, 320);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 16);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "label10";
-            this.label10.VisibleChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox2.Location = new System.Drawing.Point(217, 320);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(160, 20);
+            this.textBox2.TabIndex = 21;
             // 
             // ApplicantsPerson
             // 
@@ -290,7 +289,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(399, 396);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -350,6 +349,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

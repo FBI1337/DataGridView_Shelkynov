@@ -23,6 +23,7 @@ namespace DataGridView_Shelkynov
                     x.Name = "Иванов";
                     x.Gender = Gender.Male;
                     x.Birhday = DateTime.Now.AddYears(-12);
+                    x.Education = Enducation.BEER;
                 })
                 : new Person
                 {
@@ -53,10 +54,6 @@ namespace DataGridView_Shelkynov
             {
                 comboBox2.SelectedIndex = 0;
             }
-
-            numericUpDown1.ValueChanged += textBox5_TextChanged;
-            numericUpDown2.ValueChanged += textBox5_TextChanged;
-            numericUpDown3.ValueChanged += textBox5_TextChanged;
 
 
             textBox1.AddBinding(x => x.Text, this.person, x => x.Name, errorProvider1);
@@ -115,18 +112,14 @@ namespace DataGridView_Shelkynov
             return attributes.FirstOrDefault()?.Description ?? "IDK";
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        public void textBox5_TextChanged(object sender, EventArgs e)
         {
-            decimal value1 = numericUpDown1.Value;
-            decimal value2 = numericUpDown2.Value;
-            decimal value3 = numericUpDown3.Value;
+            Calculater();
+        }
 
-            Function function = new Function();
-
-            decimal result = function.Calculate(value1, value2, value3);
-
-            label10.Text = result.ToString();
-
+        private void Calculater()
+        {
+            textBox2.Text = (numericUpDown1.Value + numericUpDown2.Value + numericUpDown3.Value).ToString();
         }
     }
 }

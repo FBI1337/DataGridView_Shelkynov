@@ -63,6 +63,16 @@ namespace DataGridView_Shelkynov.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _121_1212362_edit_profile_comments_edit_profile_picture_icon {
+            get {
+                object obj = ResourceManager.GetObject("121-1212362_edit-profile-comments-edit-profile-picture-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4352a11381e63ce71dabfc3a0fbf5e66 {
             get {
                 object obj = ResourceManager.GetObject("4352a11381e63ce71dabfc3a0fbf5e66", resourceCulture);
@@ -86,6 +96,16 @@ namespace DataGridView_Shelkynov.Properties {
         internal static System.Drawing.Bitmap imgbin_plus_and_minus_signs_computer_icons_plus_sign_NPhrL9GLc1EGVX15UapPhDJwj {
             get {
                 object obj = ResourceManager.GetObject("imgbin-plus-and-minus-signs-computer-icons-plus-sign-NPhrL9GLc1EGVX15UapPhDJwj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_5b2181d578a338_0751043515289225814942 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-5b2181d578a338.0751043515289225814942", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

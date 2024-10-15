@@ -65,7 +65,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Enducation.cs" />
-    <Compile Include="Models\Function.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
@@ -115,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\4352a11381e63ce71dabfc3a0fbf5e66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-5b2181d578a338.0751043515289225814942.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121-1212362_edit-profile-comments-edit-profile-picture-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
