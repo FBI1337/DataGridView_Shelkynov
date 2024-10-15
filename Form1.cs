@@ -19,6 +19,9 @@ namespace DataGridView_Shelkynov
             people = new List<Person>();
             bindingSource.DataSource = people;
             InitializeComponent();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = bindingSource;
+            SetStatus();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -37,6 +40,11 @@ namespace DataGridView_Shelkynov
             toolStripStatusLabel1.Text = "Всего: ";
             toolStripStatusLabel2.Text = "Гендер";
             toolStripStatusLabel3.Text = "Люиди набравшие больше 150:";
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

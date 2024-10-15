@@ -107,5 +107,14 @@
   <ItemGroup>
     <None Include="Resources\people.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin-plus-and-minus-signs-computer-icons-plus-sign-NPhrL9GLc1EGVX15UapPhDJwj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-desktop-university-miscellaneous-logo-desktop-wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4352a11381e63ce71dabfc3a0fbf5e66.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

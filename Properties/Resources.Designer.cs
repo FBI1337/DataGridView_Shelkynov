@@ -63,6 +63,16 @@ namespace DataGridView_Shelkynov.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4352a11381e63ce71dabfc3a0fbf5e66 {
+            get {
+                object obj = ResourceManager.GetObject("4352a11381e63ce71dabfc3a0fbf5e66", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -73,9 +83,30 @@ namespace DataGridView_Shelkynov.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgbin_plus_and_minus_signs_computer_icons_plus_sign_NPhrL9GLc1EGVX15UapPhDJwj {
+            get {
+                object obj = ResourceManager.GetObject("imgbin-plus-and-minus-signs-computer-icons-plus-sign-NPhrL9GLc1EGVX15UapPhDJwj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap people {
             get {
                 object obj = ResourceManager.GetObject("people", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_desktop_university_miscellaneous_logo_desktop_wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-desktop-university-miscellaneous-logo-desktop-wall" +
+                        "paper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

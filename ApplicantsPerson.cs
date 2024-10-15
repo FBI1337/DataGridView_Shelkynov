@@ -34,7 +34,6 @@ namespace DataGridView_Shelkynov
                     Value1 = person.Value1,
                     Value2 = person.Value2,
                     Value3 = person.Value3,
-                    Result = person.Result,
                 };
 
             foreach (var item in Enum.GetValues(typeof(Gender)))
