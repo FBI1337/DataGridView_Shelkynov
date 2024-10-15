@@ -29,9 +29,9 @@ namespace DataGridView_Shelkynov
                 {
                     Id = person.Id,
                     Name = person.Name,
-                    Gender = Gender.Male,
+                    Gender = person.Gender,
                     Birhday = person.Birhday,
-                    Education = Enducation.FullTime,
+                    Education = person.Education,
                     Value1 = person.Value1,
                     Value2 = person.Value2,
                     Value3 = person.Value3,

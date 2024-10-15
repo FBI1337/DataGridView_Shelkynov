@@ -96,5 +96,10 @@ namespace DataGridView_Shelkynov
             toolStripStatusLabel4.Text = $"Очный {result.FullTimeCount} / Очно-Заочный {result.FiftyFifty} / Заочный {result.BEER}";
         }
 
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            bindingSource.DataSource = await personManager.GetAllAsync();
+            await SetStatus();
+        }
     }
 }

@@ -13,9 +13,9 @@ namespace DataGridViewShelkynov.PersonManager.Models
 
         public int FullTimeCount { get; set; }
 
-        public int FiftyFifty {  get; set; }
+        public int FiftyFifty { get; set; }
 
-        public int BEER {  get; set; }
+        public int BEER { get; set; }
 
         public int Value1 { get; set; }
 
@@ -23,6 +23,6 @@ namespace DataGridViewShelkynov.PersonManager.Models
 
         public int Value3 { get; set; }
 
-        public int Result {  get; set; }
+        public int Result { get; set; }
     }
 }

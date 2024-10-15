@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DataGridView_Shelkynov.Models
 {
-    public class Person : ICloneable
+    public class Person
     {
         public Guid Id { get; set; }
 
@@ -29,10 +29,5 @@ namespace DataGridView_Shelkynov.Models
         public int Value3 { get; set; }
 
         public int Result { get; set; }
-
-        public object Clone()
-        {
-            return MemberwiseClone();
-        }
     }
 }
