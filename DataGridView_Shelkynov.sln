@@ -5,11 +5,11 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridView_Shelkynov", "DataGridView_Shelkynov.csproj", "{AE84FCE7-E17F-4EFE-8FB8-62FB556D8025}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewShelkynov.Contracts", "..\DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj", "{98A7FE63-F82B-4018-BCAD-9B75CCDEC25E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewShelkynov.Contracts", "DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj", "{98A7FE63-F82B-4018-BCAD-9B75CCDEC25E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewShelkynov.PersonManager", "..\DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj", "{5B4644DC-020A-40C0-BA3A-D710D06E5F95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewShelkynov.PersonManager", "DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj", "{5B4644DC-020A-40C0-BA3A-D710D06E5F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtaGridViewShelkynovStoreMemory", "..\DtaGridViewShelkynovStoreMemory\DtaGridViewShelkynovStoreMemory.csproj", "{567871AB-577F-4BA6-B481-B7A1E0CA8B15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtaGridViewShelkynovStoreMemory", "DtaGridViewShelkynovStoreMemory\DtaGridViewShelkynovStoreMemory.csproj", "{567871AB-577F-4BA6-B481-B7A1E0CA8B15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
