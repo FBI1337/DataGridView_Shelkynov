@@ -21,7 +21,7 @@ namespace DataGridView_Shelkynov
         private readonly BindingSource bindingSource;
 
 
-        public Form1()
+        public Form1(IPersonManager personManager)
         {
             this.personManager = personManager;
 
