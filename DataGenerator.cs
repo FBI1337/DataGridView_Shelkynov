@@ -7,8 +7,14 @@ using DataGridView_Shelkynov.Models;
 
 namespace DataGridView_Shelkynov
 {
-    internal class DataGenerator
+    /// <summary>
+    /// Помощник для генерации данных
+    /// </summary>
+    public static class DataGenerator
     {
+        /// <summary>
+        /// Сгенирировать <see cref="Person"/> по стандартным параметрам или по заданым
+        /// </summary>
         public static Person CreatePerson(Action<Person> settings = null)
         {
             var result = new Person

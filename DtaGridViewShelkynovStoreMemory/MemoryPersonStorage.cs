@@ -7,21 +7,31 @@ using System.Threading.Tasks;
 
 namespace DtaGridViewShelkynovStoreMemory
 {
+    ///<inheritdoc cref="IPersonStorage"/>
     public class MemoryPersonStorage : IPersonStorage
     {
         private List<Person> people;
 
+        /// <summary>
+        /// Конструктор
+        /// </summary>
         public MemoryPersonStorage()
         {
             people = new List<Person>();
         }
 
+        /// <summary>
+        /// Асихронное добавление абитуриента
+        /// </summary>
         public Task<Person> AddAsync(Person person)
         {
             people.Add(person);
             return Task.FromResult(person);
         }
 
+        /// <summary>
+        /// Асихронное удаление абитуриента
+        /// </summary>
         public Task<bool> DeleteAsync(Guid id)
         {
             var person = people.FirstOrDefault(x => x.Id == id);
@@ -34,6 +44,9 @@ namespace DtaGridViewShelkynovStoreMemory
             return Task.FromResult(false);
         }
 
+        /// <summary>
+        /// Асихронное редактирование абитуриента
+        /// </summary>
         public Task EditAsync(Person person)
         {
             var target = people.FirstOrDefault(x => x.Id == person.Id);
@@ -52,6 +65,9 @@ namespace DtaGridViewShelkynovStoreMemory
             return Task.CompletedTask;
         }
 
+        /// <summary>
+        /// Получение абитуриентов из хранилища
+        /// </summary>
         public Task<IReadOnlyCollection<Person>> GetAllAsync()
             => Task.FromResult<IReadOnlyCollection<Person>>(people);
 

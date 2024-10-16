@@ -14,13 +14,18 @@ using DataGridViewShelkynov.Contracts.Models;
 
 namespace DataGridView_Shelkynov
 {
+    /// <summary>
+    /// Главная форма приложения
+    /// </summary>
     public partial class Form1 : Form
     {
 
         private readonly IPersonManager personManager;
         private readonly BindingSource bindingSource;
 
-
+        /// <summary>
+        /// Конструктор
+        /// </summary>
         public Form1(IPersonManager personManager)
         {
             this.personManager = personManager;
@@ -87,6 +92,9 @@ namespace DataGridView_Shelkynov
             }
         }
 
+        /// <summary>
+        /// Обновление статуса абитуриентов
+        /// </summary>
         public async Task SetStatus()
         {
             var result = await personManager.GetStatsAsync();

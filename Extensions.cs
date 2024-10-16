@@ -8,8 +8,14 @@ using System.Windows.Forms;
 
 namespace DataGridView_Shelkynov
 {
-    internal static class Extensions
+    /// <summary>
+    /// Расширение для различных классов
+    /// </summary>
+    public static class Extensions
     {
+        /// <summary>
+        /// Связка двух полей
+        /// </summary>
         public static void AddBinding<TControl, TSource>(this TControl target,
             Expression<Func<TControl, object>> targetProperty,
             TSource source,
@@ -45,6 +51,10 @@ namespace DataGridView_Shelkynov
                 }
             }
         }
+
+        /// <summary>
+        /// Получение имени поля
+        /// </summary>
         private static string GetMemberName<TItem, TMember>(Expression<Func<TItem, TMember>> targetMemeber)
         {
             if (targetMemeber.Body is MemberExpression memberExpression)

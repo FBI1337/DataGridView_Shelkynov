@@ -10,34 +10,41 @@ using DataGridViewShelkynov.PersonManager.Models;
 
 namespace DataGridViewShelkynov.PersonManager
 {
+    ///<inherotdoc cref="IPersonManager"/>
     public class PersonManager : IPersonManager
-
     {
         private IPersonStorage personStorage;
-
+        /// <summary>
+        /// Конструктор
+        /// </summary>
         public PersonManager(IPersonStorage personStorage)
         {
             this.personStorage = personStorage;
         }
 
+        ///<inherotdoc cref="IPersonManager.AddAsync(Person)"/>
         public async Task<Person> AddAsync(Person person)
         {
             var result = await personStorage.AddAsync(person);
             return result;
         }
 
+        ///<inherotdoc cref="IPersonManager.DeleteAsync(Guid)"/>
         public async Task<bool> DeleteAsync(Guid id)
         {
             var result = await personStorage.DeleteAsync(id);
             return result;
         }
 
+        ///<inheritdoc cref="IPersonManager.EditAsync(Person)"/>
         public Task EditAsync(Person person)
             => personStorage.EditAsync(person);
 
+        ///<inheritdoc cref="IPersonManager.GetAllAsync()"/>
         public Task<IReadOnlyCollection<Person>> GetAllAsync()
             => personStorage.GetAllAsync();
 
+        ///<inheritdoc cref="IPersonManager.GetStatsAsync()"/>
         public async Task<IPersonStats> GetStatsAsync()
         {
             var result = await personStorage.GetAllAsync();

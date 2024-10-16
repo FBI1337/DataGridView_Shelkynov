@@ -10,9 +10,15 @@ using System.Text;
 
 namespace DataGridView_Shelkynov
 {
+    /// <summary>
+    /// Форма добавления абитуриентов
+    /// </summary>
     public partial class ApplicantsPerson : Form
     {
         private Person person;
+        /// <summary>
+        /// Конструктор
+        /// </summary>
         public ApplicantsPerson(Person person = null)
         {
             InitializeComponent();
@@ -66,6 +72,9 @@ namespace DataGridView_Shelkynov
 
         }
 
+        /// <summary>
+        /// Данные абитуриентов
+        /// </summary>
         public Person Person => person;
 
         private void comboBox1_DrawItem(object sender, DrawItemEventArgs e)
@@ -112,7 +121,7 @@ namespace DataGridView_Shelkynov
             return attributes.FirstOrDefault()?.Description ?? "IDK";
         }
 
-        public void textBox5_TextChanged(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
             Calculater();
         }
