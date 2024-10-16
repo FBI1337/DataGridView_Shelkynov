@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataGridViewShelkynov.PersonManager;
+using DtaGridViewShelkynovStoreMemory;
 
 namespace DataGridView_Shelkynov
 {
@@ -16,7 +18,10 @@ namespace DataGridView_Shelkynov
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var storage = new MemoryPersonStorage();
+            var manager = new PersonManager(storage);
+
+            Application.Run(new Form1(manager));
         }
     }
 }

@@ -34,6 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicantsPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicantsPerson.Designer.cs">
+      <DependentUpon>ApplicantsPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGenerator.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ApplicantsPerson.resx">
+      <DependentUpon>ApplicantsPerson.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,7 +80,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include=".editorconfig" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +96,41 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin-plus-and-minus-signs-computer-icons-plus-sign-NPhrL9GLc1EGVX15UapPhDJwj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-desktop-university-miscellaneous-logo-desktop-wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4352a11381e63ce71dabfc3a0fbf5e66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-5b2181d578a338.0751043515289225814942.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121-1212362_edit-profile-comments-edit-profile-picture-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj">
+      <Project>{98a7fe63-f82b-4018-bcad-9b75ccdec25e}</Project>
+      <Name>DataGridViewShelkynov.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj">
+      <Project>{5b4644dc-020a-40c0-ba3a-d710d06e5f95}</Project>
+      <Name>DataGridViewShelkynov.PersonManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="DtaGridViewShelkynovStoreMemory\DtaGridViewShelkynovStoreMemory.csproj">
+      <Project>{567871ab-577f-4ba6-b481-b7a1e0ca8b15}</Project>
+      <Name>DtaGridViewShelkynovStoreMemory</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
