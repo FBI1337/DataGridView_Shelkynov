@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using DataGridViewShelkynov.Contracts.Models;
 using DataGridViewShelkynov.PersonManager.Models;
+using System.Reflection;
 
 namespace DataGridViewShelkynov.PersonManager
 {

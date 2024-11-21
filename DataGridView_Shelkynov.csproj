@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataGridViewShelkynov.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\PKGH.SlavaShel.DataGridViewShelkynov.StoreMemory.1.0.1\lib\netstandard2.0\DataGridViewShelkynov.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="DtaGridViewShelkynov.StoreMemory, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\PKGH.SlavaShel.DataGridViewShelkynov.StoreMemory.1.0.1\lib\netstandard2.0\DtaGridViewShelkynov.StoreMemory.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
@@ -119,17 +125,9 @@
     <None Include="Resources\121-1212362_edit-profile-comments-edit-profile-picture-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataGridViewShelkynov.Contracts1\DataGridViewShelkynov.Contracts.csproj">
-      <Project>{10ca420b-43ca-437c-a5fd-f7285e936a13}</Project>
-      <Name>DataGridViewShelkynov.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataGridViewShelkynov.PersonManager1\DataGridViewShelkynov.PersonManager.csproj">
-      <Project>{71414f4d-b730-4d51-afab-ba03a95183e9}</Project>
+    <ProjectReference Include="DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj">
+      <Project>{768873a8-e888-4261-a6bf-d84af7986cfb}</Project>
       <Name>DataGridViewShelkynov.PersonManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DtaGridViewShelkynovStoreMemory1\DtaGridViewShelkynovStoreMemory.csproj">
-      <Project>{86bd4836-b693-4c8d-9903-490e28e4040f}</Project>
-      <Name>DtaGridViewShelkynovStoreMemory</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

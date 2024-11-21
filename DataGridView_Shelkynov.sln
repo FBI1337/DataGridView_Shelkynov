@@ -5,11 +5,11 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridView_Shelkynov", "DataGridView_Shelkynov.csproj", "{AE84FCE7-E17F-4EFE-8FB8-62FB556D8025}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DtaGridViewShelkynovStoreMemory", "..\DtaGridViewShelkynovStoreMemory1\DtaGridViewShelkynovStoreMemory.csproj", "{86BD4836-B693-4C8D-9903-490E28E4040F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewShelkynov.Contracts", "DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj", "{CE46D236-81E4-49E8-962F-E8CE472D4F52}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGridViewShelkynov.PersonManager", "..\DataGridViewShelkynov.PersonManager1\DataGridViewShelkynov.PersonManager.csproj", "{71414F4D-B730-4D51-AFAB-BA03A95183E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtaGridViewShelkynov.StoreMemory", "DtaGridViewShelkynov.StoreMemory\DtaGridViewShelkynov.StoreMemory.csproj", "{BF964342-3058-45C9-9641-6CCC57F0AFDA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGridViewShelkynov.Contracts", "..\DataGridViewShelkynov.Contracts1\DataGridViewShelkynov.Contracts.csproj", "{10CA420B-43CA-437C-A5FD-F7285E936A13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewShelkynov.PersonManager", "DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj", "{768873A8-E888-4261-A6BF-D84AF7986CFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,18 @@ Global
 		{AE84FCE7-E17F-4EFE-8FB8-62FB556D8025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE84FCE7-E17F-4EFE-8FB8-62FB556D8025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE84FCE7-E17F-4EFE-8FB8-62FB556D8025}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86BD4836-B693-4C8D-9903-490E28E4040F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86BD4836-B693-4C8D-9903-490E28E4040F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86BD4836-B693-4C8D-9903-490E28E4040F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86BD4836-B693-4C8D-9903-490E28E4040F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71414F4D-B730-4D51-AFAB-BA03A95183E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71414F4D-B730-4D51-AFAB-BA03A95183E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71414F4D-B730-4D51-AFAB-BA03A95183E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71414F4D-B730-4D51-AFAB-BA03A95183E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10CA420B-43CA-437C-A5FD-F7285E936A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10CA420B-43CA-437C-A5FD-F7285E936A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10CA420B-43CA-437C-A5FD-F7285E936A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10CA420B-43CA-437C-A5FD-F7285E936A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE46D236-81E4-49E8-962F-E8CE472D4F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE46D236-81E4-49E8-962F-E8CE472D4F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE46D236-81E4-49E8-962F-E8CE472D4F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE46D236-81E4-49E8-962F-E8CE472D4F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF964342-3058-45C9-9641-6CCC57F0AFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF964342-3058-45C9-9641-6CCC57F0AFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF964342-3058-45C9-9641-6CCC57F0AFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF964342-3058-45C9-9641-6CCC57F0AFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768873A8-E888-4261-A6BF-D84AF7986CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768873A8-E888-4261-A6BF-D84AF7986CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768873A8-E888-4261-A6BF-D84AF7986CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768873A8-E888-4261-A6BF-D84AF7986CFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
