@@ -119,16 +119,16 @@
     <None Include="Resources\121-1212362_edit-profile-comments-edit-profile-picture-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj">
-      <Project>{98a7fe63-f82b-4018-bcad-9b75ccdec25e}</Project>
+    <ProjectReference Include="..\DataGridViewShelkynov.Contracts1\DataGridViewShelkynov.Contracts.csproj">
+      <Project>{10ca420b-43ca-437c-a5fd-f7285e936a13}</Project>
       <Name>DataGridViewShelkynov.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj">
-      <Project>{5b4644dc-020a-40c0-ba3a-d710d06e5f95}</Project>
+    <ProjectReference Include="..\DataGridViewShelkynov.PersonManager1\DataGridViewShelkynov.PersonManager.csproj">
+      <Project>{71414f4d-b730-4d51-afab-ba03a95183e9}</Project>
       <Name>DataGridViewShelkynov.PersonManager</Name>
     </ProjectReference>
-    <ProjectReference Include="DtaGridViewShelkynovStoreMemory\DtaGridViewShelkynovStoreMemory.csproj">
-      <Project>{567871ab-577f-4ba6-b481-b7a1e0ca8b15}</Project>
+    <ProjectReference Include="..\DtaGridViewShelkynovStoreMemory1\DtaGridViewShelkynovStoreMemory.csproj">
+      <Project>{86bd4836-b693-4c8d-9903-490e28e4040f}</Project>
       <Name>DtaGridViewShelkynovStoreMemory</Name>
     </ProjectReference>
   </ItemGroup>

@@ -44,11 +44,5 @@
     <Compile Include="MemoryPersonStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj">
-      <Project>{98a7fe63-f82b-4018-bcad-9b75ccdec25e}</Project>
-      <Name>DataGridViewShelkynov.Contracts</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
