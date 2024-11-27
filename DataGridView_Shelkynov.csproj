@@ -39,6 +39,12 @@
     <Reference Include="DtaGridViewShelkynov.StoreMemory, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\PKGH.SlavaShel.DataGridViewShelkynov.StoreMemory.1.0.1\lib\netstandard2.0\DtaGridViewShelkynov.StoreMemory.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.9.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -189,6 +195,10 @@
     <ProjectReference Include="DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj">
       <Project>{768873a8-e888-4261-a6bf-d84af7986cfb}</Project>
       <Name>DataGridViewShelkynov.PersonManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="DtaGridViewShelkynov.StoreMemory.DataBase\DtaGridViewShelkynov.StoreMemory.DataBase.csproj">
+      <Project>{622a1f47-ea3f-44fe-9e29-20b42463e663}</Project>
+      <Name>DtaGridViewShelkynov.StoreMemory.DataBase</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
