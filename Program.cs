@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataGridViewShelkynov.PersonManager;
+using DtaGridViewShelkynov.StoreMemory.DataBase;
 using DtaGridViewShelkynovStoreMemory;
 using Serilog;
 using Serilog.Extensions.Logging;
@@ -29,7 +30,7 @@ namespace DataGridView_Shelkynov
 
             var logger = new SerilogLoggerFactory(serilogLogger).CreateLogger("datagrid");
 
-            var storage = new MemoryPersonStorage();
+            var storage = new DataBasePersonStorage();
             var manager = new PersonManager(storage, logger);
 
             Application.Run(new Form1(manager));

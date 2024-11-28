@@ -1,18 +1,17 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using DataGridView_Shelkynov.Models;
 
-
-namespace DataGridView_Shelkynov.Models
+namespace DataGridView_Shelkynov
 {
-    /// <summary>
-    /// Класс для заполнения данных об абитуриентах
-    /// </summary>
-    public class Person
+    public class ValidatePerson
     {
         public Guid Id { get; set; }
         /// <summary>
         /// ФИО
         /// </summary>
+        [Required]
+        [StringLength(50, MinimumLength = 3)]
         public string Name { get; set; }
         /// <summary>
         /// День рождения
@@ -21,6 +20,7 @@ namespace DataGridView_Shelkynov.Models
         /// <summary>
         /// <inheritdoc cref="DataGridView_Shelkynov.Models.Gender"/>
         /// </summary>
+        [Range(0, 3)]
         public Gender Gender { get; set; }
         /// <summary>
         /// <inheritdoc cref="DataGridView_Shelkynov.Models.Enducation"/>
@@ -29,18 +29,17 @@ namespace DataGridView_Shelkynov.Models
         /// <summary>
         /// Баллы ЕГЭ по Математике
         /// </summary>
+        [Range(0, 100)]
         public int Value1 { get; set; }
         /// <summary>
         /// Баллы ЕГЭ по русскому
         /// </summary>
+        [Range(0, 100)]
         public int Value2 { get; set; }
         /// <summary>
         /// Баллы ЕГЭ по информатике
         /// </summary>
+        [Range(0, 100)]
         public int Value3 { get; set; }
-        /// <summary>
-        /// Общая сумма баллов
-        /// </summary>
-        public int Result { get; set; }
     }
 }

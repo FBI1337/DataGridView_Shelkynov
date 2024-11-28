@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewShelkynov.Perso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtaGridViewShelkynov.StoreMemory.Test", "DtaGridViewShelkynov.StoreMemory.Test\DtaGridViewShelkynov.StoreMemory.Test.csproj", "{B4D15E36-1480-4D63-9DD8-E939AFC71881}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtaGridViewShelkynov.StoreMemory.DataBase", "DtaGridViewShelkynov.StoreMemory.DataBase\DtaGridViewShelkynov.StoreMemory.DataBase.csproj", "{622A1F47-EA3F-44FE-9E29-20B42463E663}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{B4D15E36-1480-4D63-9DD8-E939AFC71881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4D15E36-1480-4D63-9DD8-E939AFC71881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4D15E36-1480-4D63-9DD8-E939AFC71881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622A1F47-EA3F-44FE-9E29-20B42463E663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622A1F47-EA3F-44FE-9E29-20B42463E663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622A1F47-EA3F-44FE-9E29-20B42463E663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622A1F47-EA3F-44FE-9E29-20B42463E663}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
