@@ -159,8 +159,9 @@ namespace DataGridViewShelkynov.PersonManager.Test
                 Times.Once);
             personStorageMock.VerifyNoOtherCalls();
         }
-
-
+        /// <summary>
+        /// Тест: Метод <see cref="PersonManager.GetAllAsync"/>
+        /// </summary>
         [Fact]
         public async Task GetAllShouldWork()
         {
@@ -203,7 +204,9 @@ namespace DataGridViewShelkynov.PersonManager.Test
             personStorageMock.Verify(x => x.GetAllAsync(), Times.Once);
             personStorageMock.VerifyNoOtherCalls();
         }
-
+        /// <summary>
+        /// Тест: Метод <see cref="PersonManager.GetStatsAsync"/>
+        /// </summary>
         [Fact]
         public async Task GetStatsShouldWork()
         {
