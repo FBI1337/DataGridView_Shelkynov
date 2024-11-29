@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using DataGridView_Shelkynov.Models;
 using DataGridViewShelkynov.Contracts;
 using DataGridViewShelkynov.Contracts.Models;
+using DtaGridViewShelkynov.StoreMemory;
 using DtaGridViewShelkynovStoreMemory;
 using FluentAssertions;
 using Xunit;
@@ -98,7 +101,7 @@ namespace DtaGridViewShelkynov.StoreMemory.Test
                 {
                     Id = Guid.NewGuid(),
                     Name = $"Name{Guid.NewGuid():N}",
-                    Gender = Gender.Famele,
+                    Gender = Gender.Female,
                     Birhday = DateTime.Now,
                     Education = Enducation.BEER,
                     Value1 = 30,

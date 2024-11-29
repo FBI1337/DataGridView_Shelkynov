@@ -14,17 +14,14 @@
       <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
-  <ItemGroup>
-      <ProjectReference Include="..\DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj">
-          <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-          <IncludeAssets>DataGridViewShelkynov.Contracts.dll</IncludeAssets>
-      </ProjectReference>
-  </ItemGroup>
-
     <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
         <ItemGroup>
             <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
         </ItemGroup>
     </Target>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj" />
+    </ItemGroup>
 
 </Project>
