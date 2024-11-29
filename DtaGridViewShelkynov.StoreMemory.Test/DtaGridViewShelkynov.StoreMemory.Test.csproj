@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.8.2\build\net462\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.8.2\build\net462\xunit.runner.visualstudio.props')" />
   <Import Project="..\packages\Microsoft.NET.Test.Sdk.17.12.0\build\net462\Microsoft.NET.Test.Sdk.props" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk.17.12.0\build\net462\Microsoft.NET.Test.Sdk.props')" />
   <Import Project="..\packages\Microsoft.CodeCoverage.17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.props" Condition="Exists('..\packages\Microsoft.CodeCoverage.17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.props')" />
   <Import Project="..\packages\xunit.core.2.9.2\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.9.2\build\xunit.core.props')" />
@@ -59,9 +60,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
     <Reference Include="System.Reflection.Metadata, Version=1.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Reflection.Metadata.1.6.0\lib\netstandard2.0\System.Reflection.Metadata.dll</HintPath>
     </Reference>
@@ -106,7 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataGridViewShelkynov.Contracts\DataGridViewShelkynov.Contracts.csproj">
-      <Project>{ce46d236-81e4-49e8-962f-e8ce472d4f52}</Project>
+      <Project>{CE46D236-81E4-49E8-962F-E8CE472D4F52}</Project>
       <Name>DataGridViewShelkynov.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataGridViewShelkynov.PersonManager\DataGridViewShelkynov.PersonManager.csproj">
@@ -114,7 +112,7 @@
       <Name>DataGridViewShelkynov.PersonManager</Name>
     </ProjectReference>
     <ProjectReference Include="..\DtaGridViewShelkynov.StoreMemory\DtaGridViewShelkynov.StoreMemory.csproj">
-      <Project>{bf964342-3058-45c9-9641-6ccc57f0afda}</Project>
+      <Project>{BF964342-3058-45C9-9641-6CCC57F0AFDA}</Project>
       <Name>DtaGridViewShelkynov.StoreMemory</Name>
     </ProjectReference>
   </ItemGroup>
@@ -129,6 +127,7 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeCoverage.17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeCoverage.17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.17.12.0\build\net462\Microsoft.NET.Test.Sdk.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.17.12.0\build\net462\Microsoft.NET.Test.Sdk.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.17.12.0\build\net462\Microsoft.NET.Test.Sdk.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.17.12.0\build\net462\Microsoft.NET.Test.Sdk.targets'))" />
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.8.2\build\net462\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.8.2\build\net462\xunit.runner.visualstudio.props'))" />
   </Target>
   <Import Project="..\packages\xunit.core.2.9.2\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.9.2\build\xunit.core.targets')" />
   <Import Project="..\packages\Microsoft.CodeCoverage.17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.targets" Condition="Exists('..\packages\Microsoft.CodeCoverage.17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.targets')" />

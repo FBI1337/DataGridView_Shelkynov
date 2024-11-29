@@ -25,7 +25,7 @@ namespace DataGridView_Shelkynov
 
             var serilogLogger = new LoggerConfiguration()
             .MinimumLevel.Verbose()
-            .WriteTo.Seq("http://localhost:5341", apiKey: "mHfFYbyaztLRbg4EhhX6")
+            .WriteTo.Seq("http://localhost:5341", apiKey: "")
             .CreateLogger();
 
             var logger = new SerilogLoggerFactory(serilogLogger).CreateLogger("datagrid");
