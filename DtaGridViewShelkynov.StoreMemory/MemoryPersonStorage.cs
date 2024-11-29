@@ -50,7 +50,7 @@ namespace DtaGridViewShelkynovStoreMemory
         public Task EditAsync(Person person)
         {
             var target = people.FirstOrDefault(x => x.Id == person.Id);
-            if (person != null)
+            if (target != null)
             {
                 target.Name = person.Name;
                 target.Gender = person.Gender;
@@ -59,7 +59,6 @@ namespace DtaGridViewShelkynovStoreMemory
                 target.Value1 = person.Value1;
                 target.Value2 = person.Value2;
                 target.Value3 = person.Value3;
-                target.Result = person.Result;
             }
 
             return Task.CompletedTask;

@@ -144,11 +144,11 @@ namespace DataGridViewShelkynov.PersonManager
                 {
                     Count = result.Count,
                     MaleCount = result.Where(x => x.Gender == Gender.Male).Count(),
-                    FemaleCount = result.Where(x => x.Gender == Gender.Famele).Count(),
+                    FemaleCount = result.Where(x => x.Gender == Gender.Female).Count(),
                     FullTimeCount = result.Where(x => x.Education == Enducation.FullTime).Count(),
                     FiftyFifty = result.Where(x => x.Education == Enducation.FiftyFifty).Count(),
                     BEER = result.Where(x => x.Education == Enducation.BEER).Count(),
-                    Result = result.Where(x => x.Result >= 150).Count(),
+                    Result = result.Where(x => x.Value1 + x.Value2 + x.Value3 >= 150).Count(),
                 };
             }
             catch (Exception ex)

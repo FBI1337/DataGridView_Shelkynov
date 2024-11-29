@@ -15,9 +15,9 @@ namespace DataGridView_Shelkynov
         /// <summary>
         /// Сгенирировать <see cref="Person"/> по стандартным параметрам или по заданым
         /// </summary>
-        public static Person CreatePerson(Action<Person> settings = null)
+        public static ValidatePerson CreatePerson(Action<ValidatePerson> settings = null)
         {
-            var result = new Person
+            var result = new ValidatePerson
             {
                 Id = Guid.NewGuid(),
                 Name = Guid.NewGuid().ToString(),

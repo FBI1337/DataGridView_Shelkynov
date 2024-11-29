@@ -29,14 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GenderColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BirhtdayColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EnducationColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Score_Math = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Score_rus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Score_IT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStripEdit = new System.Windows.Forms.ToolStripButton();
@@ -47,6 +39,14 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GenderColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BirhtdayColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EnducationColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Score_Math = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Score_rus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Score_IT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -72,62 +72,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(794, 388);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormating);
-            // 
-            // NameColumn
-            // 
-            this.NameColumn.DataPropertyName = "Name";
-            this.NameColumn.HeaderText = "ФИО";
-            this.NameColumn.Name = "NameColumn";
-            this.NameColumn.ReadOnly = true;
-            // 
-            // GenderColumn
-            // 
-            this.GenderColumn.DataPropertyName = "Gender";
-            this.GenderColumn.HeaderText = "Пол";
-            this.GenderColumn.Name = "GenderColumn";
-            this.GenderColumn.ReadOnly = true;
-            // 
-            // BirhtdayColumn
-            // 
-            this.BirhtdayColumn.DataPropertyName = "Birhday";
-            this.BirhtdayColumn.HeaderText = "Дата рождения";
-            this.BirhtdayColumn.Name = "BirhtdayColumn";
-            this.BirhtdayColumn.ReadOnly = true;
-            // 
-            // EnducationColumn
-            // 
-            this.EnducationColumn.DataPropertyName = "Education";
-            this.EnducationColumn.HeaderText = "Форма обучения";
-            this.EnducationColumn.Name = "EnducationColumn";
-            this.EnducationColumn.ReadOnly = true;
-            // 
-            // Score_Math
-            // 
-            this.Score_Math.DataPropertyName = "Value1";
-            this.Score_Math.HeaderText = "Баллы по математике";
-            this.Score_Math.Name = "Score_Math";
-            this.Score_Math.ReadOnly = true;
-            // 
-            // Score_rus
-            // 
-            this.Score_rus.DataPropertyName = "Value2";
-            this.Score_rus.HeaderText = "Баллы по русскому";
-            this.Score_rus.Name = "Score_rus";
-            this.Score_rus.ReadOnly = true;
-            // 
-            // Score_IT
-            // 
-            this.Score_IT.DataPropertyName = "Value3";
-            this.Score_IT.HeaderText = "Баллы по информатике";
-            this.Score_IT.Name = "Score_IT";
-            this.Score_IT.ReadOnly = true;
-            // 
-            // TotalScore
-            // 
-            this.TotalScore.DataPropertyName = "Result";
-            this.TotalScore.HeaderText = "Сумма баллов";
-            this.TotalScore.Name = "TotalScore";
-            this.TotalScore.ReadOnly = true;
             // 
             // toolStrip1
             // 
@@ -219,6 +163,63 @@
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel4.Text = "toolStripStatusLabel4";
             // 
+            // NameColumn
+            // 
+            this.NameColumn.DataPropertyName = "Name";
+            this.NameColumn.HeaderText = "ФИО";
+            this.NameColumn.Name = "NameColumn";
+            this.NameColumn.ReadOnly = true;
+            // 
+            // GenderColumn
+            // 
+            this.GenderColumn.DataPropertyName = "Gender";
+            this.GenderColumn.HeaderText = "Пол";
+            this.GenderColumn.Name = "GenderColumn";
+            this.GenderColumn.ReadOnly = true;
+            // 
+            // BirhtdayColumn
+            // 
+            this.BirhtdayColumn.DataPropertyName = "Birhday";
+            this.BirhtdayColumn.HeaderText = "Дата рождения";
+            this.BirhtdayColumn.Name = "BirhtdayColumn";
+            this.BirhtdayColumn.ReadOnly = true;
+            // 
+            // EnducationColumn
+            // 
+            this.EnducationColumn.DataPropertyName = "Education";
+            this.EnducationColumn.HeaderText = "Форма обучения";
+            this.EnducationColumn.Name = "EnducationColumn";
+            this.EnducationColumn.ReadOnly = true;
+            // 
+            // Score_Math
+            // 
+            this.Score_Math.DataPropertyName = "Value1";
+            this.Score_Math.HeaderText = "Баллы по математике";
+            this.Score_Math.Name = "Score_Math";
+            this.Score_Math.ReadOnly = true;
+            // 
+            // Score_rus
+            // 
+            this.Score_rus.DataPropertyName = "Value2";
+            this.Score_rus.HeaderText = "Баллы по русскому";
+            this.Score_rus.Name = "Score_rus";
+            this.Score_rus.ReadOnly = true;
+            // 
+            // Score_IT
+            // 
+            this.Score_IT.DataPropertyName = "Value3";
+            this.Score_IT.HeaderText = "Баллы по информатике";
+            this.Score_IT.Name = "Score_IT";
+            this.Score_IT.ReadOnly = true;
+            // 
+            // TotalScore
+            // 
+            this.TotalScore.DataPropertyName = "Result";
+            this.TotalScore.HeaderText = "Сумма баллов";
+            this.TotalScore.Name = "TotalScore";
+            this.TotalScore.ReadOnly = true;
+            this.TotalScore.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +255,7 @@
         private System.Windows.Forms.ToolStripButton toolStripClose;
         private System.Windows.Forms.ToolStripButton toolStripDelete;
         private System.Windows.Forms.ToolStripButton toolStripEdit;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn GenderColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn BirhtdayColumn;
@@ -262,7 +264,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Score_rus;
         private System.Windows.Forms.DataGridViewTextBoxColumn Score_IT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalScore;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
     }
 }
 

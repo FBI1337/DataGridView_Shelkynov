@@ -13,10 +13,12 @@ namespace DataGridView_Shelkynov.Models
         /// <summary>
         /// ФИО
         /// </summary>
+
         public string Name { get; set; }
         /// <summary>
         /// День рождения
         /// </summary>
+
         public DateTime Birhday { get; set; }
         /// <summary>
         /// <inheritdoc cref="DataGridView_Shelkynov.Models.Gender"/>
@@ -38,9 +40,5 @@ namespace DataGridView_Shelkynov.Models
         /// Баллы ЕГЭ по информатике
         /// </summary>
         public int Value3 { get; set; }
-        /// <summary>
-        /// Общая сумма баллов
-        /// </summary>
-        public int Result { get; set; }
     }
 }
