@@ -19,6 +19,6 @@ namespace DataGridView_Shelkynov.Models
         /// Женский пол
         /// </summary>
         [Description("Женский")]
-        Famele = 2,
+        Female = 2,
     }
 }

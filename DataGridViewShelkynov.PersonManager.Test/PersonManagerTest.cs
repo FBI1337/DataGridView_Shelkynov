@@ -50,7 +50,7 @@ namespace DataGridViewShelkynov.PersonManager.Test
             {
                 Id = Guid.NewGuid(),
                 Name = $"Name{Guid.NewGuid():N}",
-                Gender = Gender.Famele,
+                Gender = Gender.Female,
                 Birhday = DateTime.Now,
                 Education = Enducation.BEER,
                 Value1 = 30,
@@ -92,7 +92,7 @@ namespace DataGridViewShelkynov.PersonManager.Test
             {
                 Id = Guid.NewGuid(),
                 Name = $"Name{Guid.NewGuid():N}",
-                Gender = Gender.Famele,
+                Gender = Gender.Female,
                 Birhday = DateTime.Now,
                 Education = Enducation.BEER,
                 Value1 = 30,
@@ -130,7 +130,7 @@ namespace DataGridViewShelkynov.PersonManager.Test
             {
                 Id = Guid.NewGuid(),
                 Name = $"Name{Guid.NewGuid():N}",
-                Gender = Gender.Famele,
+                Gender = Gender.Female,
                 Birhday = DateTime.Now,
                 Education = Enducation.BEER,
                 Value1 = 30,
@@ -159,9 +159,8 @@ namespace DataGridViewShelkynov.PersonManager.Test
                 Times.Once);
             personStorageMock.VerifyNoOtherCalls();
         }
-        /// <summary>
-        /// Тест: Метод <see cref="PersonManager.GetAllAsync"/>
-        /// </summary>
+
+
         [Fact]
         public async Task GetAllShouldWork()
         {
@@ -183,7 +182,7 @@ namespace DataGridViewShelkynov.PersonManager.Test
         {
             Id = Guid.NewGuid(),
             Name = "Person2",
-            Gender = Gender.Famele,
+            Gender = Gender.Female,
             Birhday = DateTime.Now.AddYears(-22),
             Education = Enducation.FullTime,
             Value1 = 70,
@@ -204,9 +203,7 @@ namespace DataGridViewShelkynov.PersonManager.Test
             personStorageMock.Verify(x => x.GetAllAsync(), Times.Once);
             personStorageMock.VerifyNoOtherCalls();
         }
-        /// <summary>
-        /// Тест: Метод <see cref="PersonManager.GetStatsAsync"/>
-        /// </summary>
+
         [Fact]
         public async Task GetStatsShouldWork()
         {
@@ -217,20 +214,20 @@ namespace DataGridViewShelkynov.PersonManager.Test
         {
             Id = Guid.NewGuid(),
             Name = "Person1",
-            Gender = Gender.Famele,
+            Gender = Gender.Male,
             Birhday = DateTime.Now.AddYears(-20),
-            Education = Enducation.BEER,
-            Value1 = 30,
-            Value2 = 30,
-            Value3 = 30
+            Education = Enducation.FullTime,
+            Value1 = 60,
+            Value2 = 60,
+            Value3 = 60
         },
         new Person
         {
             Id = Guid.NewGuid(),
             Name = "Person2",
-            Gender = Gender.Famele,
+            Gender = Gender.Female,
             Birhday = DateTime.Now.AddYears(-22),
-            Education = Enducation.FullTime,
+            Education = Enducation.BEER,
             Value1 = 70,
             Value2 = 70,
             Value3 = 70

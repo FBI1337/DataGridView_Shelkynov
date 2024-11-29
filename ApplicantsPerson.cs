@@ -7,6 +7,8 @@ using System.Reflection;
 using System.Windows.Forms;
 using DataGridView_Shelkynov.Models;
 using System.Text;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataGridView_Shelkynov
 {
@@ -15,23 +17,26 @@ namespace DataGridView_Shelkynov
     /// </summary>
     public partial class ApplicantsPerson : Form
     {
-        private Person person;
+        private ValidatePerson person;
         /// <summary>
         /// Конструктор
         /// </summary>
-        public ApplicantsPerson(Person person = null)
+        public ApplicantsPerson(ValidatePerson person = null)
         {
             InitializeComponent();
             this.person = person == null
-                ? DataGenerator.CreatePerson(x =>
+                ? new ValidatePerson
                 {
-                    x.Id = Guid.NewGuid();
-                    x.Name = "Иванов";
-                    x.Gender = Gender.Male;
-                    x.Birhday = DateTime.Now.AddYears(-12);
-                    x.Education = Enducation.BEER;
-                })
-                : new Person
+                    Id = Guid.NewGuid(),
+                    Name = "Иванов",
+                    Gender = Gender.Male,
+                    Birhday = DateTime.Now.AddYears(-12),
+                    Education = Enducation.BEER,
+                    Value1 = 100,
+                    Value2 = 100,
+                    Value3 = 100,
+                }
+                : new ValidatePerson
                 {
                     Id = person.Id,
                     Name = person.Name,
@@ -71,11 +76,20 @@ namespace DataGridView_Shelkynov
             numericUpDown3.AddBinding(x => x.Value, this.person, x => x.Value3, errorProvider1);
 
         }
+        private void Calculater()
+        {
+            textBox2.Text = (numericUpDown1.Value + numericUpDown2.Value + numericUpDown3.Value).ToString();
+        }
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            Calculater();
+        }
+
 
         /// <summary>
         /// Данные абитуриентов
         /// </summary>
-        public Person Person => person;
+        public ValidatePerson ValidatePerson => person;
 
         private void comboBox1_DrawItem(object sender, DrawItemEventArgs e)
         {
@@ -106,6 +120,20 @@ namespace DataGridView_Shelkynov
                     e.Bounds.Y);
             }
         }
+        private string GetDisplayValueEnducation(Enducation value)
+        {
+            var field = value.GetType().GetField(value.ToString());
+            var attributes = field.GetCustomAttributes<DescriptionAttribute>(false);
+            return attributes.FirstOrDefault()?.Description ?? "IDK";
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (ValidatablePerson(person))
+            {
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+        }
 
         private string GetDisplayValueGender(Gender value)
         {
@@ -114,21 +142,11 @@ namespace DataGridView_Shelkynov
             return attributes.FirstOrDefault()?.Description ?? "IDK";
         }
 
-        private string GetDisplayValueEnducation(Enducation value)
+        private bool ValidatablePerson(ValidatePerson person)
         {
-            var field = value.GetType().GetField(value.ToString());
-            var attributes = field.GetCustomAttributes<DescriptionAttribute>(false);
-            return attributes.FirstOrDefault()?.Description ?? "IDK";
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            Calculater();
-        }
-
-        private void Calculater()
-        {
-            textBox2.Text = (numericUpDown1.Value + numericUpDown2.Value + numericUpDown3.Value).ToString();
+            var context = new ValidationContext(person, serviceProvider: null, items: null);
+            var results = new List<ValidationResult>();
+            return Validator.TryValidateObject(person, context, results, true);
         }
     }
 }
